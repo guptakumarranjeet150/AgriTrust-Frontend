@@ -2,16 +2,16 @@
   "name": "agritrust-frontend",
   "version": "0.1.0",
   "private": true,
-  "description": "Frontend for AgriTrust Protocol — decentralized agricultural trust fund management on Stellar Soroban",
+  "description": "Frontend for AgriTrust Protocol \u2014 decentralized agricultural trust fund management on Stellar Soroban",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "eslint",
     "test": "vitest run",
     "setup:local": "node scripts/setup-local-dev.mjs",
     "setup:local:check": "node scripts/setup-local-dev.mjs --check",
-    "build:analyze": "cross-env ANALYZE=true next build --webpack"
+    "build:analyze": "node init && cross-env ANALYZE=true next build --webpack"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.101.0",
